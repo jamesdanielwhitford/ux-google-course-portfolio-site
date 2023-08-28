@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Whitford - UX Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="snap-container">
+        <section class="landing">
+            <h1>Welcome to My UX Portfolio</h1>
+            <p>Hi, I'm James. This is a brief showcase of my UX case studies.</p>
+            <button onclick="scrollToWork()" class="cta-button">&#8595;</button> <!-- Downward arrow symbol -->
+        </section>
+        <section class="case-studies">
+            <h2>My Work</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="/images/1.png" alt="Case Study 1">
+                    <h2>Guesthouse App Case Study</h2>
+                    <a href="https://drive.google.com/file/d/1VVd4qHEmcujc_N2W4mIGNODuwoWklKAN/view?usp=sharing">View Case Study</a>
+                </div>
+                <div class="card">
+                    <img src="/images/2.png" alt="Case Study 2">
+                    <h2>Charity App Case Study</h2>
+                    <a href="https://docs.google.com/presentation/d/11sVb_o4OdSO_SH1r2GlRZHqzk4VoRx39IRIu0nIotdw/edit?usp=sharing">View Case Study</a>
+                </div>
+                <div class="card">
+                    <img src="/images/3.png" alt="Case Study 3">
+                    <h2>Transcription App Case Study</h2>
+                    <a href="https://docs.google.com/presentation/d/1JXwsPiLOekr_Mo3tceV_pC-4xmRleihRv_KDGQMl12Y/edit?usp=sharing">View Case Study</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        function scrollToWork() {
+            document.querySelector('.case-studies').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,134 @@
+html {
+    scroll-snap-type: y mandatory;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    height: 200%; /* To accommodate both sections */
+    overflow-y: scroll; /* Ensure the scrollbar is always visible */
+}
+
+.snap-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.landing, .case-studies {
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.landing {
+    background-color: #4CAF50; /* Engaging green color */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.landing p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #4CAF50;
+    border: 2px solid #fff; /* Set border color to white */
+    border-radius: 50%; /* Perfect circle shape */
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.5em; /* Increase arrow size */
+    transition: background-color 0.3s;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 50px; /* Fixed width for perfect circle */
+    height: 50px; /* Fixed height for perfect circle */
+}
+
+.cta-button:hover {
+    background-color: #f4f4f4;
+}
+
+
+.case-studies {
+    background-color: #FFC107; /* Complimentary engaging color - amber */
+    color: #333; /* Dark text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center cards vertically */
+    align-items: center;
+    text-align: center;
+}
+
+.case-studies h2 {
+    font-size: 2em;
+    margin-bottom: 50px; /* Increased space between heading and cards */
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px; /* Increased spacing between cards */
+}
+
+.card {
+    border: none;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFEB3B; /* Lighter shade of amber for cards */
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333; /* Dark text color */
+}
+
+.card a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #007BFF; /* Blue button color */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
