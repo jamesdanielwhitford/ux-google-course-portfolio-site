@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    height: 200%; /* To accommodate both sections */
+    height: 100%; /* To accommodate both sections */
     overflow-y: scroll; /* Ensure the scrollbar is always visible */
 }
 
